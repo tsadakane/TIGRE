@@ -63,7 +63,6 @@ struct  Geometry {
     float sDetecU, sDetecV;
     float dDetecU, dDetecV;
     float *offDetecU, *offDetecV;
-    float *offSourceY,*offSourceZ;
     float* DSD;
     float* dRoll;
     float* dPitch;

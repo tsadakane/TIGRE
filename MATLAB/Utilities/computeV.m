@@ -24,7 +24,6 @@ if ~isfield(geo,'mode')||~strcmp(geo.mode,'parallel')
         auxgeo.DSD = geo.DSD(auxindex);
         auxgeo.DSO = geo.DSO(auxindex);
         auxgeo.offOrigin = geo.offOrigin(:,auxindex);
-        auxgeo.offSource = geo.offSource(:,auxindex);
         auxgeo.offDetector = geo.offDetector(:,auxindex);
         auxgeo.rotDetector = geo.rotDetector(:,auxindex);
         auxgeo.COR = geo.COR(auxindex);
@@ -54,3 +53,4 @@ function [gpuids]=parse_inputs(varargin)
         gpuids=p.Results.gpuids;
     end
 end
+
